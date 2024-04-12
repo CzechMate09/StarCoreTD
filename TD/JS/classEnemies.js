@@ -148,7 +148,7 @@ class FastEnemy extends Enemy {
         this.maxHealth = 400;
         this.health = this.maxHealth;
         this.name = "Rychlý nepřítel";
-        this.moneyValue = 10;
+        this.moneyValue = 15;
         this.image = enemyImages.fast;
     }
 }
