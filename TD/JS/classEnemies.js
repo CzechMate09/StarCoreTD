@@ -156,8 +156,8 @@ class FastEnemy extends Enemy {
 class HeavyEnemy extends Enemy {
     constructor(args) {
         super(args);
-        this.speed = 0.2;
-        this.maxHealth = 15000;
+        this.speed = 0.3;
+        this.maxHealth = 13000;
         this.health = this.maxHealth;
         this.name = "Těžký nepřítel";
         this.moneyValue = 50;
@@ -168,8 +168,8 @@ class HeavyEnemy extends Enemy {
 class BossEnemy extends Enemy {
     constructor(args) {
         super(args);
-        this.speed = 0.1;
-        this.maxHealth = 100000;
+        this.speed = 0.2;
+        this.maxHealth = 90000;
         this.health = this.maxHealth;
         this.name = "Boss nepřítel";
         this.moneyValue = 50;
