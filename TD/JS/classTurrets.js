@@ -128,7 +128,7 @@ class SplashTurret extends Turret {
         this.splashRadius = this.radius/1.5; // Radius of splash damage
         this.damage = SplashTurret.damage;
         this.splashDamage = this.damage; // Damage to other enemies within the splash radius
-        this.fireRate = 300; 
+        this.fireRate = 250; 
         this.imageSrc = turretImages.splash
     }
 
