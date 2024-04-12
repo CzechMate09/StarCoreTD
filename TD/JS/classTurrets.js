@@ -117,7 +117,7 @@ class SniperTurret extends Turret {
 class SplashTurret extends Turret {
     static name = "Věž s rozptylovou střelbou"
     static cost = 70;
-    static damage = 150;
+    static damage = 170;
     static fireRate = "pomalá";
     static radius = "střední";
     static info = "Projektil dokáže zasáhnout několik nepřátel na jednou.";
@@ -125,7 +125,7 @@ class SplashTurret extends Turret {
     constructor(cord) {
         super(cord);
         this.radius = range_short; 
-        this.splashRadius = this.radius/1.5; // Radius of splash damage
+        this.splashRadius = this.radius/1.2; // Radius of splash damage
         this.damage = SplashTurret.damage;
         this.splashDamage = this.damage; // Damage to other enemies within the splash radius
         this.fireRate = 220; 
