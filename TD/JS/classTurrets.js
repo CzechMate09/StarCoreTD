@@ -92,7 +92,7 @@ class Turret {
 class SniperTurret extends Turret {
     static name = "Odstřelovací věž"
     static cost = 130;
-    static damage = 2000;
+    static damage = 4000;
     static fireRate = "pomalá";
     static radius = "dlouhý";
     static info = "Věž s vysokou sílou, dlouhým dosahem, ale s pomalou rychlostí střelby";
