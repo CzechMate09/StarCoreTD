@@ -18,7 +18,7 @@ class Turret {
         this.projectiles = []
         this.radius = range_medium; // Range of the turret
         this.damage = Turret.damage; // Damage to the primary target
-        this.fireRate = 70; // Fire rate
+        this.fireRate = 50; // Fire rate
         this.target;
         this.frames = 0;
         this.lastAngle = 0;
@@ -128,7 +128,7 @@ class SplashTurret extends Turret {
         this.splashRadius = this.radius/1.5; // Radius of splash damage
         this.damage = SplashTurret.damage;
         this.splashDamage = this.damage; // Damage to other enemies within the splash radius
-        this.fireRate = 250; 
+        this.fireRate = 220; 
         this.imageSrc = turretImages.splash
     }
 
