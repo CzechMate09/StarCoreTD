@@ -91,7 +91,7 @@ class Turret {
 
 class SniperTurret extends Turret {
     static name = "Odstřelovací věž"
-    static cost = 130;
+    static cost = 110;
     static damage = 4000;
     static fireRate = "pomalá";
     static radius = "dlouhý";
@@ -101,7 +101,7 @@ class SniperTurret extends Turret {
         super(cord);
         this.radius = range_long;
         this.damage = SniperTurret.damage;
-        this.fireRate = 400;
+        this.fireRate = 300;
         this.imageSrc = turretImages.sniper
     }
 
