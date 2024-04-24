@@ -172,7 +172,7 @@ class BossEnemy extends Enemy {
         this.maxHealth = 90000;
         this.health = this.maxHealth;
         this.name = "Boss nepřítel";
-        this.moneyValue = 50;
+        this.moneyValue = 100;
         this.image = enemyImages.boss;
     }
 }
