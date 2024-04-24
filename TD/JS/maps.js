@@ -51,10 +51,10 @@ const mapsData = {
         key: "stage_3",
         layout: [
             ["BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "END", "BOR"],
-            ["BOR", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "P9 ", "P10", "P11", "P12", "BOR"],
-            ["STR", "P0 ", "P1 ", "DEP", "P5" , "P6 ", "P7 ", "P8 ", "UND", "DEP", "DEP", "BOR"],
-            ["BOR", "DEP", "P2" , "P3 ", "P4 ", "UND", "DEP", "DEP", "DEP", "DEP", "DEP", "BOR"],
-            ["BOR", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "BOR"],
+            ["BOR", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "P15", "P16", "BOR"],
+            ["STR", "P0 ", "P1 ", "DEP", "P5" , "P6 ", "P7 ", "P8 ", "UND", "P14", "DEP", "BOR"],
+            ["BOR", "DEP", "P2" , "P3 ", "P4 ", "UND", "DEP", "P9 ", "DEP", "P13", "DEP", "BOR"],
+            ["BOR", "DEP", "DEP", "DEP", "DEP", "DEP", "DEP", "P10", "P11", "P12", "DEP", "BOR"],
             ["BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR", "BOR"],
 
 
