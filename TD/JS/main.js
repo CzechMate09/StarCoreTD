@@ -25,9 +25,7 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 var mapGridWidth = mapGrid[0].length; // number of items in first array
 var mapGridHeight = mapGrid.length //mapGridWidth
 var cellSize = Math.ceil(canvas.width / mapGridWidth); //128
-
-
-
+const baseCellSize = 128;
 
 //
 //-----------------------------------------------------------------------------
