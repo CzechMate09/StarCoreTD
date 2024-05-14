@@ -1,7 +1,7 @@
 class Turret {
     static name = "Základní věž"
     static cost = 40;
-    static damage = 100;
+    static damage = 90;
     static fireRate = "střední";
     static radius = "střední";
     static info = "Základní věž";
@@ -18,7 +18,7 @@ class Turret {
         this.projectiles = []
         this.radius = range_medium; // Range of the turret
         this.damage = Turret.damage; // Damage to the primary target
-        this.fireRate = 50; // Fire rate
+        this.fireRate = 70; // Fire rate
         this.target;
         this.frames = 0;
         this.lastAngle = 0;
@@ -91,7 +91,7 @@ class Turret {
 
 class SniperTurret extends Turret {
     static name = "Odstřelovací věž"
-    static cost = 110;
+    static cost = 150;
     static damage = 4000;
     static fireRate = "pomalá";
     static radius = "dlouhý";
@@ -117,7 +117,7 @@ class SniperTurret extends Turret {
 class SplashTurret extends Turret {
     static name = "Věž s rozptylovou střelbou"
     static cost = 70;
-    static damage = 170;
+    static damage = 120;
     static fireRate = "pomalá";
     static radius = "střední";
     static info = "Projektil dokáže zasáhnout několik nepřátel na jednou.";
@@ -128,7 +128,7 @@ class SplashTurret extends Turret {
         this.splashRadius = this.radius/1.2; // Radius of splash damage
         this.damage = SplashTurret.damage;
         this.splashDamage = this.damage; // Damage to other enemies within the splash radius
-        this.fireRate = 220; 
+        this.fireRate = 250; 
         this.imageSrc = turretImages.splash
     }
 
