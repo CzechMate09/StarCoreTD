@@ -3,7 +3,7 @@ class Enemy {
     constructor( 
     {
         cord = {x:0,y:0}, 
-        speed= 0.5, 
+        speed= 0.5 * (cellSize / baseCellSize), 
         maxHealth = 200, 
         name = "default",
         width = cellSize*0.9,
@@ -132,7 +132,7 @@ class Enemy {
 class NormalEnemy extends Enemy {
     constructor(args) {
         super(args);
-        this.speed = 0.5;
+        this.speed = 0.5 * (cellSize / baseCellSize);
         this.maxHealth = 3000 ;
         this.health = this.maxHealth;
         this.name = "Základní Nepřítel";
@@ -144,7 +144,7 @@ class NormalEnemy extends Enemy {
 class FastEnemy extends Enemy {
     constructor(args) {
         super(args);
-        this.speed = 1.4;
+        this.speed = 1.4 * (cellSize / baseCellSize);
         this.maxHealth = 400;
         this.health = this.maxHealth;
         this.name = "Rychlý nepřítel";
@@ -156,7 +156,7 @@ class FastEnemy extends Enemy {
 class HeavyEnemy extends Enemy {
     constructor(args) {
         super(args);
-        this.speed = 0.3;
+        this.speed = 0.3 * (cellSize / baseCellSize);
         this.maxHealth = 13000;
         this.health = this.maxHealth;
         this.name = "Těžký nepřítel";
@@ -168,7 +168,7 @@ class HeavyEnemy extends Enemy {
 class BossEnemy extends Enemy {
     constructor(args) {
         super(args);
-        this.speed = 0.2;
+        this.speed = 0.2 * (cellSize / baseCellSize);
         this.maxHealth = 90000;
         this.health = this.maxHealth;
         this.name = "Boss nepřítel";
