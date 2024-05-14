@@ -145,7 +145,7 @@ class FastEnemy extends Enemy {
     constructor(args) {
         super(args);
         this.speed = 1.4 * (cellSize / baseCellSize);
-        this.maxHealth = 400;
+        this.maxHealth = 1000;
         this.health = this.maxHealth;
         this.name = "Rychlý nepřítel";
         this.moneyValue = 15;
