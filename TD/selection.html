@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StarCore TD</title>
+    <link rel="stylesheet" type="text/css" href="selection-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="bodySelection">
+    <div id="page-loader">
+        <div class="stripes-container">
+            <div class="stripes" id="stripe1"></div>
+            <div class="stripes" id="stripe2"></div>
+            <div class="stripes" id="stripe3"></div>
+        </div>
+        <div id="page-loader-title" class="page-loader-title"></div>
+    </div>
+    
+    <div class="nav">
+        <a href="../index.html" class="anchorButton">
+            <i class="fa-solid fa-fw fa-chevron-left"></i>
+            Zpět
+            <i class="fa-solid fa-house"></i>
+        </a>
+    </div>
+    
+    <div class="mapSelectionContainer">
+        <div class="screen-off"></div>
+        <div class="monitor">
+            <div class="mapSelection">
+                <div class="stage" data-map="stage_1">Level 1</div>
+                <div class="stage" data-map="stage_2">Level 2</div>
+                <div class="stage" data-map="stage_3">Level 3</div>
+                <div class="stage" data-map="stage_4">Level 4</div>
+                <div class="stage" data-map="stage_5">Level 5</div>
+            </div>
+            <div class="navStripes-container">
+                <div class="navStripe"></div>
+                <div class="navStripe"></div>
+                <div class="navStripe"></div>
+            </div>
+        </div>
+        
+        <div class="mapPanel">
+            <p>Náhled mapy:</p>
+            <canvas id="mapPreview" class="mapPreview"></canvas>
+            <div class="space"></div>
+            <button id="startGame" class="startGameButton">Hrát</button>
+        </div>
+    </div>
+
+    <script src="JS/classEnemies.js"></script>
+    <script src="JS/classTurrets.js"></script>
+    <script src="JS/maps.js"></script>
+    <script src="JS/library.js"></script>
+    <script src="JS/setup.js"></script>
+    <script src="JS/selection-script.js"></script>
+    
+</body>
+</html>

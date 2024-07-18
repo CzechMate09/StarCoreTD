@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Tower Defence</title>
+</head>
+
+<body>
+    <div id="page-loader">
+        <div class="stripes-containerFade">
+            <div class="stripes" id="stripe1"></div>
+            <div class="stripes" id="stripe2"></div>
+            <div class="stripes" id="stripe3"></div>
+        </div>
+        <div id="page-loader-title" class="page-loader-title"> </div>
+    </div>
+    <div class="container">
+        <button id="pauseButton"><i class="fa-solid fa-pause"></i> Zastavit hru</button>
+        <button id="settingsButton"><i class="fa-solid fa-gear"></i></button>
+
+        <div id="settings" class="settings">
+            <a href="../index.html">Zpět na hlavní menu</a>
+            <a href="selection.html">Zpět na výběr map</a>
+            <a onclick="resetGameState()">Restartovat</a>
+
+            <div class="stripes-container">
+                <div class="stripes"></div>
+                <div class="stripes"></div>
+                <div class="stripes"></div>
+            </div>
+            <div class="stripe"></div>
+        </div>
+
+        <div class="GameContainer">
+            <canvas id="canvas"></canvas>
+            <div class="Panel">
+
+                <div class="Resources Lives">
+                    <i class="fa-solid fa-heart"></i> Životy:
+                    <span id="Lives"></span>
+                </div>
+                
+
+                <div class="Resources Money">
+                    <i class="fa-solid fa-coins"></i> Peníze:
+                    <span id="Money"></span>
+                </div>
+                
+                <div class="Resources"> Odstranit věže: 
+                    <label class="switch">
+                    <input type="checkbox" id="removeTurretToggle" checked="false">
+                    <span class="slider round"></span>
+                    </label>
+                </div>
+                
+
+                 <!-- Turret Selection Area -->
+                <div class="TurretSelection">
+                    <div class="Turret" id="BasicTurret">
+                        <img src="img/turrets/turret_base.svg">
+                        <img src="img/turrets/turret_normal.svg">
+                    </div>
+
+                    <div class="Turret" id="SniperTurret">
+                        <img src="img/turrets/turret_base.svg">
+                        <img src="img/turrets/turret_sniper.svg">
+                    </div>
+
+                    <div class="Turret" id="SplashTurret">
+                        <img src="img/turrets/turret_base.svg">
+                        <img src="img/turrets/turret_splash.svg">
+                    </div>
+                    
+                    <div class="Turret" id="SlowTurret">
+                        <img src="img/turrets/turret_base.svg">
+                        <img src="img/turrets/turret_slow.svg">
+                    </div>
+                    
+                </div>
+                <div class="TurretDetails">
+                    <div><span id="turret_name"></span></div>
+                    <div>Síla: <span id="turret_damage"></span></div>
+                    <div>Rozsah: <span id="turret_radius"></span></div>
+                    <div>Rychlost střelby: <span id="turret_fireRate"></span></div>
+                    <div>Cena: <span id="turret_cost"></span></div>
+                    <div>Info: <span id="turret_info"></span></div>
+                </div>
+                <div class="Console" id="ConsoleMessages"></div>
+            </div>
+        </div>
+
+        <!-- Winning Screen Overlay -->
+        <div id="winningScreen" class="winning-screen hidden">
+            <div class="winning-message">
+                <div id="starsContainer"></div>
+                <p id="winningMessage"></p>
+                <a href="selection.html">Zpět na výběr map</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/classEnemies.js"></script>
+    <script src="JS/classTurrets.js"></script>
+    <script src="JS/classProjectiles.js"></script>
+    <script src="JS/maps.js"></script>
+    <script src="JS/library.js"></script>
+    <script src="JS/setup.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
